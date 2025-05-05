@@ -35,5 +35,4 @@ class Customer:
         return shop.location
 
     def moving_home(self) -> list:
-        self.location_home = self.location.copy()
-        return self.location_home
+        return self.location

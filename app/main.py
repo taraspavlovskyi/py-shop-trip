@@ -65,7 +65,6 @@ def shop_trip() -> None:
         print(f"{customer.name} rides home")
 
         customer.location = customer.moving_home()
+        customer.money -= shop_costs[cheapest_shop_object.name]
 
-        print(f"{customer.name} now has "
-              f"{customer.money - shop_costs[cheapest_shop_object.name]} "
-              f"dollars\n")
+        print(f"{customer.name} now has {customer.money} dollars\n")
